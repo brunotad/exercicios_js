@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<hr><br><hr>");
+        document.write("<br>");
+
+    }
+
+    function aVidente(frase) {
+
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+
+    }
+
+    function ilhaDeserta(frase) {
+
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+
+    }
+
+
+    function escolhaAnimal(frase) {
+
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+
+    }
+
+    function trocaAnimal(frase) {
+
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+
+    }
+
+    var nome;
+    var qtdFilhos;
+    var cidade;
+    var profissao;
+    var item1;
+    var item2;
+    var item3;
+    var pqItens;
+    var animal1;
+    var animal2;
+    var pqAnimal1;
+    var pqAnimal2;
+
+    alert("Responda o questionário que vem a seguir:");
+    nome = prompt("Qual é o seu nome?");
+    profissao = prompt("Em cinco anos, em qual profissão deseja estar?");
+    cidade = prompt("Em cinco anos, em que cidade gostaria de morar?");
+    qtdFilhos = prompt("Em cinco anos, com quantos filhos pretende estar?");
+    
+    alert("Escreva três itens que levaria para uma ilha deserta:");
+    item1 = prompt("Escreva o primeiro item que levaria.");
+    item2 = prompt("Escreva o segundo item que levaria.");
+    item3 = prompt("Escreva o terceiro item que levaria.");
+    pqItens = prompt ("Por quê levaria esses itens?")
+
+    alert("Escreva dois animais que você gostaria de ser:");
+    animal1 = prompt("Escreva o nome do primeiro animal que gostaria de ser.");
+    pqAnimal1 = prompt("Por que?");
+    animal2 = prompt("Escreva o nome do segundo animal que gostaria de ser.");
+    pqAnimal2 = prompt("Por que?");
+
+    aVidente("A vidente prevê que: " + nome + " terá " + qtdFilhos + " filho(s) e viverá na cidade de " + cidade + " trabalhando como " + profissao);
+
+    ilhaDeserta("Eu levaria para uma ilha deserta: " + item1 + ", "  + item2 + "e "  + item3 + ". " + pqItens);
+
+    escolhaAnimal("Num primeiro momento, eu gostaria de ser um(a): " + animal1 + ". " + pqAnimal1);
+
+    animal1 = animal2;
+    pqAnimal1 = pqAnimal2;
+
+    trocaAnimal("Pensando melhor, prefiro ser um(a): " + animal1 + ". " + pqAnimal1);
+
+</script>
