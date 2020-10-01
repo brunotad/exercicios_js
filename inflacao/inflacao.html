@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function infla(vlInicial, vlFinal) {
+       
+        inflaResult = (vlFinal - vlInicial)*100/vlInicial;
+
+        return inflaResult
+    }
+
+    var tomateIn = 3.30;
+    var tomateOut = 4.70;
+    var arrozIn = 2.99;
+    var arrozOut = 3.25;
+    var cenouraIn = 3.99;
+    var cenouraOut = 4.14;
+    var mediaInfla = (infla(tomateIn, tomateOut) + infla(arrozIn, arrozOut) + infla(cenouraIn, cenouraOut))/3;
+    var periodo = 30 - 24;
+    
+    document.write("A inflação do tomate é: " + (infla(tomateIn, tomateOut)).toFixed(2) + 
+                   ", e a estimativa diária da inflação é: " + (infla(tomateIn, tomateOut)/periodo).toFixed(2) + "<br><br>");
+
+    document.write("A inflação do arroz é: " + (infla(arrozIn, arrozOut)).toFixed(2) +
+                   ", e a estimativa diária da inflação é: " + (infla(arrozIn, arrozOut)/periodo).toFixed(2) + "<br><br>");
+
+    document.write("A inflação da cenoura é: " + (infla(cenouraIn, cenouraOut)).toFixed(2) +
+                ", e a estimativa diária da inflação é: " + (infla(cenouraIn, cenouraOut)/periodo).toFixed(2) + "<br><br>");
+
+    document.write("A média da inflação no período é: " + (mediaInfla).toFixed(2));
+
+</script>

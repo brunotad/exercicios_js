@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+    
+    function rateio(qtLaranjas, qtVizinhos) {
+
+        result = qtLaranjas / qtVizinhos;
+
+        return result
+
+    }
+
+
+    function sobra(qtLaranjas, qtVizinhos) {
+
+        result = qtLaranjas % qtVizinhos;
+
+        return result
+
+    }
+
+    qtLaranjasInfomadas = prompt("Informe quantas laranjas você possui")
+    qtVizinhosInfomados = prompt("Informe quantos vizinhos são")   
+
+    document.write(
+        "Cada vizinho receberá " + rateio(qtLaranjasInfomadas, qtVizinhosInfomados) +
+        " laranjas, e você ficará com " + sobra(qtLaranjasInfomadas, qtVizinhosInfomados) + " laranjas."
+    )
+
+</script>

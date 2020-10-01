@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function lucroBruto(valorPizza, custoPizza) {
+
+        result = valorPizza - custoPizza;
+
+        return result
+
+    }
+
+    function impostoRetido(valorPizza, imposto) {
+
+        result = valorPizza * imposto;
+
+        return result
+
+    }
+
+    var custoPizzaInformado = prompt("Informe o custo de produção da pizza");
+    var valorPizzaInformado = prompt("Informe o valor de venda da pizza");
+    var nomePizzaInformado = prompt("Informe o nome da pizza");
+    var impostoInformado = 8.9/100;
+
+    document.write(
+        "Para a pizza " + nomePizzaInformado + " o lucro líquido é de R$ " + 
+        (lucroBruto(valorPizzaInformado, custoPizzaInformado) - impostoRetido(valorPizzaInformado, impostoInformado)) +
+        " e o imposto é de " + impostoRetido(valorPizzaInformado, impostoInformado)       
+    )
+
+</script>
