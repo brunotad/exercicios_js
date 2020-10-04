@@ -2,7 +2,16 @@
 
 <script>
 
+    var nomePais = prompt("Digite o nome do país")
+    var idadePermissao = prompt("Digite a idade a partir da qual se pode beber no " + nomePais + ".");
+    var idadeUsuario = prompt("Informe sua idade");
 
-
+    if (idadeUsuario >= idadePermissao) {
+        document.write("Vá em frente! Com " + idadeUsuario + " anos já é permitido beber no " + nomePais + "!");
+ 
+    } else {
+        document.write("Somente " + idadeUsuario + " anos! Terá que aguardar até os " + idadePermissao + " para beber no " + nomePais + "!");        
+    
+    }
     
 </script>

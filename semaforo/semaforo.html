@@ -2,7 +2,25 @@
 
 <script>
 
+    function semaforo(parametro) {
 
+        var sinal = parametro.toLowerCase();
 
+        if (sinal == "verde") {
+            document.write("Pode passar!");
+        
+        } else 
+            if (sinal == "amarelo") {
+
+                document.write("Melhor freiar!")
+            } else {
+
+                document.write("Pare já!");
+            }
+    }
+
+    var sinalInformado = prompt("Verde, amarelo ou vermelho? Qual cor você está vendo no momento?");
+    
+    semaforo(sinalInformado);
     
 </script>
